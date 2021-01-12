@@ -25,6 +25,9 @@ const userSchema = new mongoose.Schema(
     googleId: {
       type: String,
     },
+    email: {
+      type: String,
+    },
   },
   {
     timestamps: true,

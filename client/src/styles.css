@@ -51,11 +51,11 @@ input {
 }
 
 .sign-up-form {
-  transition: 0.8s 0.2s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 
 .sign-in-form {
-  transition: 0.8s 0.2s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 
 form {
@@ -267,20 +267,24 @@ form {
 }
 
 .fade-enter .container:before {
-  transform: translate(100%, -50%);
-  right: 52%;
+  transform: translate(95%, -50%);
+  right: 40%;
+  top: 30%;
 }
 .fade-exit .container:before {
-  transform: translate(100%, -50%);
-  right: 52%;
+  transform: translate(95%, -50%);
+  right: 40%;
+  top: 30%;
 }
 .fade-enter-active .container:before {
-  transform: translate(100%, -50%);
-  right: 52%;
+  transform: translate(95%, -50%);
+  right: 40%;
+  top: 30%;
 }
 .fade-exit-active .container:before {
-  transform: translate(100%, -50%);
-  right: 52%;
+  transform: translate(95%, -50%);
+  right: 40%;
+  top: 30%;
 }
 
 @media (max-width: 870px) {
@@ -397,18 +401,22 @@ form {
   .fade-enter .container:before {
     transform: translate(-30%, 100%);
     right: initial;
+    top: initial;
   }
   .fade-exit .container:before {
     transform: translate(-30%, 100%);
     right: initial;
+    top: initial;
   }
   .fade-enter-active .container:before {
     transform: translate(-30%, 100%);
     right: initial;
+    top: initial;
   }
   .fade-exit-active .container:before {
     transform: translate(-30%, 100%);
     right: initial;
+    top: initial;
   }
 }
 

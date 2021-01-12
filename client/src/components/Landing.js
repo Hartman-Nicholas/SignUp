@@ -32,9 +32,7 @@ const Landing = () => {
                   </div>
                 </div>
                 <div className="panels-container">
-                  <div
-                    className={`panel left-panel ${showSignIn ? "active" : ""}`}
-                  >
+                  <div className="panel left-panel">
                     <div className="content">
                       <h3>New here ?</h3>
                       <p>lorem ipsum dolor sit amet</p>

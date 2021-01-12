@@ -10,6 +10,7 @@ const UserInfo = () => {
     dispatch(actions.fetchUser());
   }, [dispatch]);
 
+  console.log(auth);
   const renderUser = () => {
     if (!auth) {
       return;
