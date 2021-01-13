@@ -1,7 +1,6 @@
 import React from "react";
 import { Form, Field, FormSpy } from "react-final-form";
 import createDecorator from "final-form-focus";
-import { Redirect } from "react-router-dom";
 import { Link } from "react-router-dom";
 import validateEmails from "../../utils/validateEmails";
 import FormStateToRedux from "./FormStateToRedux";
@@ -142,12 +141,12 @@ const SignUpForm = (props) => {
           <FormSpy subscription={{ submitSucceeded: true, values: true }}>
             {({ submitSucceeded }) => {
               if (submitSucceeded) {
-                return <Redirect to="/surveys/new" />;
+                return <Link to="/UserInfo" />;
               }
               return <div></div>;
             }}
           </FormSpy>
-          <FormStateToRedux form="SurveyForm" />
+          <FormStateToRedux form="SignUpForm" />
                       
         </form>
       )}

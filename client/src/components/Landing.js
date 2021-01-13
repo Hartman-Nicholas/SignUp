@@ -35,7 +35,7 @@ const Landing = () => {
                   <div className="panel left-panel">
                     <div className="content">
                       <h3>New here ?</h3>
-                      <p>lorem ipsum dolor sit amet</p>
+                      <p>Boilerplate for OAuth Logins</p>
                       <button
                         onClick={() => {
                           setSignIn(false);
@@ -67,7 +67,7 @@ const Landing = () => {
                   <div className="panel right-panel">
                     <div className="content">
                       <h3>One of us ?</h3>
-                      <p>lorem ipsum dolor sit amet</p>
+                      <p>Boilerplate for OAuth Logins</p>
                       <button
                         onClick={() => {
                           setSignIn(true);

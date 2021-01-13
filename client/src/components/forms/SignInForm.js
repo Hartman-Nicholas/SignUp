@@ -1,14 +1,11 @@
 import React from "react";
 import { Form, Field, FormSpy } from "react-final-form";
 import createDecorator from "final-form-focus";
-import { Redirect } from "react-router-dom";
 import { Link } from "react-router-dom";
 import FormStateToRedux from "./FormStateToRedux";
 
 const required = (value) => (value ? undefined : "Required");
 
-const composeValidators = (...validators) => (value) =>
-  validators.reduce((error, validator) => error || validator(value), undefined);
 const focusOnError = createDecorator();
 
 const onSubmit = () => {
@@ -87,12 +84,12 @@ const SignInForm = (props) => {
           <FormSpy subscription={{ submitSucceeded: true, values: true }}>
             {({ submitSucceeded }) => {
               if (submitSucceeded) {
-                return <Redirect to="/surveys/new" />;
+                return <Link to="/UserInfo" />;
               }
               return <div></div>;
             }}
           </FormSpy>
-          <FormStateToRedux form="SurveyForm" />
+          <FormStateToRedux form="SignInForm" />
                       
         </form>
       )}
